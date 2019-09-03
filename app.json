@@ -1,0 +1,22 @@
+{
+    "addons": [
+  
+    ],
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ],
+    "env": {
+    },
+    "formation": {
+      "web": {
+        "quantity": 1
+      }
+    },
+    "name": "banka-crest-react",
+    "scripts": {
+    },
+    "stack": "heroku-18"
+  }
+  
