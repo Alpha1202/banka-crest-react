@@ -8,7 +8,6 @@ import {
   SIGNUP_CLIENT_START,
   SIGNUP_CLIENT_SUCCESS,
   SIGNUP_CLIENT_FAILURE,
-  LOGOUT,
 } from '../actions/types';
 
 const initialState = {
@@ -76,11 +75,6 @@ const reducer = (state = initialState, action) => {
         ...state,
         loading: false,
         redirect: false,
-      };
-    case LOGOUT:
-      return {
-        ...initialState,
-        loading: false,
       };
     default:
       return state;

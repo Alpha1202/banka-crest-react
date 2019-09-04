@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import Homepage from '../views/homepage';
 import UserDashboard from '../views/userDashboard';
+import HomePage from './homepage/index';
 import AdminDashboard from '../views/adminDashboard';
 import SignUp from '../views/signup';
 import AdminLogin from '../views/adminLogin';
@@ -13,7 +13,7 @@ const App = () => (
   <React.Fragment>
     <ToastContainer />
     <Switch>
-      <Route exact path="/" component={Homepage} />
+      <Route exact path="/" component={HomePage} />
       <Route path="/dashboard" component={UserDashboard} />
       <Route path="/admindashboard" component={AdminDashboard} />
       <Route path="/signUp" component={SignUp} />
