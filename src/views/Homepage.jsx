@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+import Homepage from '../components/homepage/index';
 
 
-class Homepage extends Component {
+class Index extends Component {
    state = {}
 
 
    render() {
      return (
        <div>
-        Hello, welcome to our landing page
+         <Homepage />
        </div>
      );
    }
 }
 
-export default Homepage;
+export default Index;

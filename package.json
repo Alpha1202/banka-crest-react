@@ -9,7 +9,8 @@
     "start:dev": "webpack-dev-server --open --hot",
     "test": "jest --coverage --colors -i -u",
     "test:watch": "jest --watch --coverage --colors",
-    "test:coverage": "jest --coverage --colors"
+    "test:coverage": "jest --coverage --colors",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
     "moxios": "^0.4.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
+    "pure-react-carousel": "^1.21.2",
     "query-string": "^6.8.2",
     "react": "^16.8.6",
     "react-addons-css-transition-group": "^15.6.2",
@@ -98,6 +100,7 @@
     "babel-loader": "8.0.6",
     "babel-plugin-styled-components": "^1.10.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "coveralls": "^3.0.6",
     "css-loader": "^3.2.0",
     "enzyme-to-json": "^3.4.0",
     "eslint": "^5.16.0",
