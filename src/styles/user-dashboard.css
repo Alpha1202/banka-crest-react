@@ -12,7 +12,7 @@ html {
   color: var(--dark);
 }
 body {
-  background: #ccc;
+  background: #ccc !important;
   margin: 0;
  
 }

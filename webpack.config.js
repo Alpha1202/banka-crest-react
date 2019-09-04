@@ -3,14 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
-  entry: ['@babel/polyfill', './src/index.js'],
+  entry: './src/index.js',
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.resolve(__dirname, 'dist/'),
     filename: 'bundle.js',
-    publicPath: '/',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css', '.scss'],
+    extensions: ['.js', '.jsx', '.css'],
   },
   module: {
     rules: [
@@ -40,8 +39,5 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     port: 3000,
-  },
-  externals: {
-    fs: 'commonjs fs',
   },
 };
